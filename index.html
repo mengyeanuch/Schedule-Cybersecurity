@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Timetable 2025-2026</title>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+    }
+
+    .header {
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .header h1 {
+        margin: 5px 0;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .header h2 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .header h3 {
+        margin: 0;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .start-date {
+        text-align: right;
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+        font-size: 12px;
+    }
+
+    th, td {
+        border: 1px solid black;
+        text-align: center;
+        vertical-align: middle;
+        padding: 6px;
+    }
+
+    th {
+        background: #0b4f6c;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* TIME COLUMN */
+    .time {
+        background: white;
+        font-weight: bold;
+        width: 95px;
+    }
+
+    .time-break {
+        background: #f4b400;
+        font-weight: bold;
+        width: 95px;
+    }
+
+    /* ROW TYPES */
+    .break, .lunch {
+        background: #f4b400;
+        font-weight: bold;
+    }
+
+    .seminar {
+        background: #0b4f6c;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .subject {
+        font-weight: bold;
+    }
+
+    .lect {
+        color: red;
+        font-weight: bold;
+    }
+
+    .room {
+        font-size: 11px;
+    }
+
+    .note {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+
+    .footer {
+        font-size: 11px;
+        text-align: right;
+        margin-top: 10px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h3>Institute of Digital Technology</h3>
+    <h1>TIMETABLE 2025 - 2026</h1>
+    <h2>Department of Telecommunications and Networking</h2>
+    <h3>Specialize in Cybersecurity</h3>
+    <h3>Generation 11, Year 2 - Term 1</h3>
+</div>
+
+<div class="start-date">Start Date: 30/September/2025</div>
+
+<table>
+    <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+    </tr>
+
+    <!-- National Anthem -->
+    <tr>
+        <td class="time-break">07h50 - 08h00</td>
+        <td colspan="5" class="break">National Anthem</td>
+    </tr>
+
+    <!-- 08h00 - 09h30 -->
+    <tr>
+        <td class="time">08h00 - 09h30</td>
+        <td>
+            <div class="subject">Introduction to Cybersecurity</div>
+            <div class="lect">Lect. Vy Sokhamphou</div>
+            <div class="room">Theory - A101</div>
+        </td>
+        <td>
+            <div class="subject">Python in Cybersecurity</div>
+            <div class="lect">Lect. Mr. Han Leangsiv</div>
+            <div class="room">Lab G1 - A205</div>
+        </td>
+        <td rowspan="3" class="seminar">Seminar</td>
+        <td>
+            <div class="subject">Introduction to Cybersecurity</div>
+            <div class="lect">Lect. Mr. Vy Sokhamphou</div>
+            <div class="room">Lab G1 - A205</div>
+        </td>
+        <td>
+            <div class="subject">Basic Electronic</div>
+            <div class="lect">Lect. Dr. Nov Lihour</div>
+            <div class="room">Theory - A112</div>
+        </td>
+    </tr>
+
+    <!-- First Break -->
+    <tr>
+        <td class="time-break">09h30 - 09h50</td>
+        <td colspan="2" class="break">Break (15 mins)</td>
+        <td colspan="2" class="break">Break (15 mins)</td>
+    </tr>
+
+    <!-- 09h50 - 11h20 -->
+    <tr>
+        <td class="time">09h50 - 11h20</td>
+        <td>
+            <div class="subject">Database Management System</div>
+            <div class="lect">Lect. Mr. Thear Sophal</div>
+            <div class="room">Theory - A101</div>
+        </td>
+        <td>
+            <div class="subject">Python in Cybersecurity</div>
+            <div class="lect">Lect. Mr. Han Leangsiv</div>
+            <div class="room">Lab G1 - A205</div>
+        </td>
+        <td>
+            <div class="subject">Switching, Routing, and Wireless Essential</div>
+            <div class="lect">Lect. Mr. Chhit Sokna</div>
+            <div class="room">Lab G2 - A114</div>
+        </td>
+        <td>
+            <div class="subject">Introduction to Cybersecurity</div>
+            <div class="lect">Lect. Mr. Vy Sokhamphou</div>
+            <div class="room">Lab G2 - A205</div>
+        </td>
+    </tr>
+
+    <!-- Lunch -->
+    <tr>
+        <td class="time-break">11h30 - 12h10</td>
+        <td colspan="5" class="lunch">Lunch Break</td>
+    </tr>
+
+    <!-- 13h50 - 15h20 -->
+    <tr>
+        <td class="time">13h50 - 15h20</td>
+        <td>
+            <div class="subject">Database Management System</div>
+            <div class="lect">Lect. Mr. Thear Sophal</div>
+            <div class="room">Lab G1 - A205</div>
+        </td>
+        <td>
+            <div class="subject">Python in Cybersecurity</div>
+            <div class="lect">Lect. Mr. Han Leangsiv</div>
+            <div class="room">Lab G2 - A205</div>
+        </td>
+        <td>
+            <div class="subject">Switching, Routing, and Wireless Essential</div>
+            <div class="lect">Lect. Mr. Chhit Sokna</div>
+            <div class="room">Theory - A102</div>
+        </td>
+        <td>
+            <div class="subject">Database Management System</div>
+            <div class="lect">Lect. Mr. Thear Sophal</div>
+            <div class="room">Lab G2 - A205</div>
+        </td>
+        <td>
+            <div class="subject">Basic Electronic</div>
+            <div class="lect">Lect. Dr. Nov Lihour</div>
+            <div class="room">Lab G2 - A112</div>
+        </td>
+    </tr>
+
+    <!-- Second Break (FIXED) -->
+    <tr>
+        <td class="time-break">15h20 - 15h30</td>
+        <td colspan="5" class="break">Break (15 mins)</td>
+    </tr>
+
+    <!-- 15h30 - 17h00 -->
+    <tr>
+        <td class="time">15h30 - 17h00</td>
+        <td>
+            <div class="subject">Python in Cybersecurity</div>
+            <div class="lect">Lect. Mr. Han Leangsiv</div>
+            <div class="room">Theory - Jupiter Lab G1</div>
+        </td>
+        <td>
+            <div class="subject">Database Management System</div>
+            <div class="lect">Lect. Mr. Thear Sophal</div>
+            <div class="room">Lab G2 - A205</div>
+        </td>
+        <td>
+            <div class="subject">Switching, Routing, and Wireless Essential</div>
+            <div class="lect">Lect. Mr. Chhit Sokna</div>
+            <div class="room">Lab G1 - A114</div>
+        </td>
+        <td>
+            <div class="subject">Database Management System</div>
+            <div class="lect">Lect. Mr. Thear Sophal</div>
+            <div class="room">Lab G2 - A205</div>
+        </td>
+        <td>
+            <div class="subject">Basic Electronic</div>
+            <div class="lect">Lect. Dr. Nov Lihour</div>
+            <div class="room">Lab G2 - A112</div>
+        </td>
+    </tr>
+</table>
+
+<div class="note">
+    Note: The schedule is subject to change as appropriate.
+</div>
+
+<div class="footer">
+    Phnom Penh, 30/September/2025<br>
+    Department of Telecoms and Networking
+</div>
+
+</body>
+</html>
